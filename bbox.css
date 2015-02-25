@@ -1,3 +1,11 @@
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
 .container {
   margin: auto;
   font-family: "Helvetica-Neue", helvetica, sans-serif;
@@ -8,40 +16,86 @@
 
 }
 
+/*
+heading font size: 14px;
+smaller font (human): 12px;
+link size: 16px? (twitter);
+enough room for 3 across?
+put in board heading and human
+background: #f2f2f2;
+*/
+
 .side {
   position: fixed;
   left: 100px;
+  top: 50px;
 }
 
 .side h1 {
+  margin: 0px 0px 10px 0px;
   font-size: 1em;
   padding-bottom: 20px;
+  font-weight: 100;
 }
 
-.boxes {
-  text-align: center;
-  max-width: 300px;
-  margin-left: 300px;
+.side a {
+  display: block;
+  padding-bottom: 20px;
+  color: blue;
+  font-size: 14px;
+}
+
+.board {
+  max-width: 900px;
+  margin: 50px 0px 0px 250px;
+  height: 1000px;
+}
+
+.board > h1 {
+  font-size: 20px;
+  margin: 0px 0px 5px 0px;
+}
+
+.board > h2 {
+  font-size: 16px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 20px 0px;
+  border-bottom: 1px solid #eee;
+}
+
+.board a.human {
+  color: #888;
+  text-decoration: none;
+  font-weight: 100;
 }
 
 .box {
-  border: 1px solid black;
-  margin: 15px 0px 20px 0px;
-  background-color: white;
-  border-radius: 5px;
+  padding: 20px 10px 20px 10px;
+  float: left;
+  width: 250px;
+  margin: 25px 25px 0px 0px;
+  border: 1px solid #eee;
+  text-align: left;
 }
 
-a {
+.box a {
   display: block;
-  padding-bottom: 20px;
+  margin: 20px 0px 0px 0px;
+  color: blue;
+  font-size: 14px;
 }
 
-.box h2 {
+.box h1 {
+  font-size: 16px;
+  margin: 0px 0px 5px 0px;
+  font-weight: 400;
+}
+
+.box a.human {
+  font-size: 12px;
+  color: #888;
+  margin: 0px 0px 10px 0px;
   border-bottom: 1px solid #eee;
-  margin: 20px 0px 10px 0px;
-  padding-bottom: 10px;
-}
-
-h1, h2 {
-  font-weight: 100;
+  padding: 0px 0px 10px 0px;
+  text-decoration: none;
 }
