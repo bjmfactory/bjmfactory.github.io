@@ -30,6 +30,7 @@ background: #f2f2f2;
   position: fixed;
   left: 0px;
   top: 0px;
+  width: 100px;
   padding: 50px 50px 100% 100px;
   border-right: 1px solid #eee;
 }
@@ -49,9 +50,15 @@ background: #f2f2f2;
 }
 
 .content {
-  max-width: 400px;
   margin: 50px 0px 0px 400px;
   height: 1000px;
+
+}
+
+.board {
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 322px;
 }
 
 .board > h1 {
@@ -75,7 +82,7 @@ background: #f2f2f2;
 .box {
   padding: 20px 10px 20px 10px;
   width: 300px;
-  margin: 10px 10px 0px 0px;
+  margin: 10px 0px 0px 0px;
   border: 1px solid #ddd;
   text-align: left;
   background-color: white;
