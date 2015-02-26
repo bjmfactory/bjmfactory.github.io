@@ -1,6 +1,5 @@
 body {
   margin: 0px;
-  background-color: #fff;
 }
 
 h1 {
@@ -10,6 +9,7 @@ h1 {
 .container {
   margin: auto;
   font-family: "Helvetica-Neue", helvetica, sans-serif;
+/*  font-family: "Courier New", Courier, monospace;*/
   font-weight: 100;
 }
 
@@ -28,8 +28,10 @@ background: #f2f2f2;
 
 .side {
   position: fixed;
-  left: 100px;
-  top: 50px;
+  left: 0px;
+  top: 0px;
+  padding: 50px 50px 100% 100px;
+  border-right: 1px solid #eee;
 }
 
 .side h1 {
@@ -46,9 +48,9 @@ background: #f2f2f2;
   font-size: 14px;
 }
 
-.board {
-  max-width: 900px;
-  margin: 50px 0px 0px 250px;
+.content {
+  max-width: 400px;
+  margin: 50px 0px 0px 400px;
   height: 1000px;
 }
 
@@ -72,8 +74,7 @@ background: #f2f2f2;
 
 .box {
   padding: 20px 10px 20px 10px;
-  float: left;
-  width: 250px;
+  width: 300px;
   margin: 10px 10px 0px 0px;
   border: 1px solid #ddd;
   text-align: left;
